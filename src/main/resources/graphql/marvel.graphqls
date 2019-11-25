@@ -22,7 +22,7 @@ type Character {
     #  A resource list of events in which this character appears.
     events: Resource
     # A more detailed list of comic series in which this character appears.
-    seriesList(id: Int!): [Serie]
+    seriesList: [Serie]
 }
 
 type Thumbnail {

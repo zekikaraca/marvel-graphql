@@ -18,8 +18,8 @@ public class CharacterResolver implements GraphQLResolver<Character> {
         this.marvelService = marvelService;
     }
 
-    public List<Serie> getSeriesList(final Character character, final int id) throws IOException {
-        return this.marvelService.getSeries(id);
+    public List<Serie> getSeriesList(final Character character) throws IOException {
+        return this.marvelService.getSeries(character.getId());
     }
 
 }
