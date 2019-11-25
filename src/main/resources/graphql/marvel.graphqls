@@ -1,0 +1,4 @@
+type Query {
+    characters(limit: Int!): [Character]
+    character(id: Int!): Character
+}
