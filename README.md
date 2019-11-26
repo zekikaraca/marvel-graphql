@@ -32,7 +32,7 @@ model that corresponds to the following `Character` endpoints of the
 - `GET /v1/public/characters`
 - `GET /v1/public/characters/{characterId}`
 
-Add the first two `types` to the `.graphqls` file (we've omitted the some
+Add the first two `types` to the `.graphqls` file (we've omitted some
 properties, for you to complete):
 
 ```graphql
@@ -135,7 +135,7 @@ this endpoint.
 For this assignment you will try to add an uppercase directive to your
 application. The directive will uppercase any String field you for which you've
 set the directive in your schema. Please refer to
-[directives](https://graphql.org/learn/queries/#directives) for more information
+[directives](https://www.graphql-java.com/documentation/v13/sdl-directives/) for more information
 on how to implement them.
 
 # Resources
