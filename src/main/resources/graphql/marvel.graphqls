@@ -5,6 +5,12 @@ type Query {
     character(id: Int!): Character
   }
 
+type Mutation {
+    addFavourite(id: Int!): Favourite
+    delFavourite(id: Int!): Boolean
+    getAllFavourites: [Favourite]
+}
+
 type Character {
     id: String
     name: String
@@ -23,6 +29,7 @@ type Character {
     events: Resource
     # A more detailed list of comic series in which this character appears.
     seriesList: [Serie]
+    favourite: Boolean
 }
 
 type Thumbnail {
@@ -57,4 +64,8 @@ type Serie {
     rating: String
     type: String
     modified: String
+}
+
+type Favourite {
+    characterId: Int!
 }
